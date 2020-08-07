@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+}
+.banner{
+    height: 80vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(1.jpg);
+    background-size: contain;
+    background-position: center center;
+}
+.banner h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #fff;
+    font-family: big john;
+}
+.content{
+    padding: 60px;
+    font-family: poppins;
+}
+.content h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.scrollUp{
+    display: -webkit-flex;
+    display: -moz--flex;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+    background: crimson;
+    justify-content: center;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+.scrollUp.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(-55px);
+}
